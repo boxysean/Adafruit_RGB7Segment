@@ -3,9 +3,28 @@
 
 /* How to use:
 
-(1) Solder up board
-(2) Download TLC5940.h library
-(3) Change number of TLCs in tlc_config.h to 2
+(1) Solder up board. Use a 3.3K resistor and 0.1uF capacitor in the appropriate places. Use plenty of flux on the SMD bit.
+(2) Download TLC5940 library (see README for link)
+(3) Change number of TLCs in Tlc5940/tlc_config.h to 2
+(4) Plug in board as follows:
+
+    Basic Pin setup:
+    ------------      
+    ARDUINO   13|-> CL
+              12|     
+              11|-> IN
+              10|-> BL
+               9|-> XL
+               8|     
+               7|     
+               6|     
+               5|     
+               4|     
+               3|
+               2|
+               1|
+               0|
+    ------------ 
 
 */
 
@@ -30,7 +49,6 @@ void loop() {
     }
   }
 }
-
 
 
 
